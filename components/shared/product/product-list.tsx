@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import ProductCard from "./product-card";
 
-const ProductList = ({ data, title, limit }: { data: any, title?: String, limit?: number }) => {
+const ProductList = ({ data, title, limit }: { data: any, title?: string, limit?: number }) => {
     const limitedData = limit ? data.slice(0, limit) : data;
     return (
         <div className=" my-10">
